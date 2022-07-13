@@ -67,7 +67,7 @@ footer {
   justify-content: space-between;
   gap: 15px;
   flex-wrap: wrap;
-  background: #b3f95a;
+  /* background: #b3f95a; */
 }
 
 .promo-el {
