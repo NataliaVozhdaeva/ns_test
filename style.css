@@ -67,6 +67,7 @@ footer {
   justify-content: space-between;
   gap: 15px;
   flex-wrap: wrap;
+  background: #b3f95a;
 }
 
 .promo-el {
@@ -134,7 +135,9 @@ footer {
   width: 400px;
   height: 400px;
   background: #fff;
-  position: relative;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -151,15 +154,10 @@ footer {
   background: #7faff6;
 }
 
-.btn-openPopupBtn:hover ~ .popup,
-.popup:hover {
-  animation: 5s show ease;
+.btn-openPopupBtn:hover ~ .popup {
+  animation: 0.3s show ease;
   animation-fill-mode: forwards;
   display: flex;
-}
-
-.popup:hover {
-  opacity: 1;
 }
 
 @keyframes show {
