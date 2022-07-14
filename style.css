@@ -142,7 +142,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   display: none;
-  /*  opacity: 0; */
+  opacity: 0;
 }
 
 .btn-closePopupBtn {
@@ -155,17 +155,13 @@ footer {
 }
 
 .popup:target {
+  animation: 0.3s show ease;
+  animation-fill-mode: forwards;
   display: flex;
 }
 
 header:target ~ .popup {
   display: none;
-}
-
-/*.btn-openPopupBtn:hover ~ .popup {
-  animation: 0.3s show ease;
-  animation-fill-mode: forwards;
-  display: flex;
 }
 
 @keyframes show {
@@ -176,9 +172,3 @@ header:target ~ .popup {
     opacity: 1;
   }
 }
-
-
-в safary должно быть можно вот так 
-.popap:has(.btn-closePopupBtn:active) {
-  display: none;
-}*/
