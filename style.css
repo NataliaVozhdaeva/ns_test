@@ -142,7 +142,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   display: none;
-  opacity: 0;
+  /*  opacity: 0; */
 }
 
 .btn-closePopupBtn {
@@ -154,7 +154,15 @@ footer {
   background: #7faff6;
 }
 
-.btn-openPopupBtn:hover ~ .popup {
+.popup:target {
+  display: flex;
+}
+
+header:target ~ .popup {
+  display: none;
+}
+
+/*.btn-openPopupBtn:hover ~ .popup {
   animation: 0.3s show ease;
   animation-fill-mode: forwards;
   display: flex;
@@ -169,7 +177,7 @@ footer {
   }
 }
 
-/*
+
 в safary должно быть можно вот так 
 .popap:has(.btn-closePopupBtn:active) {
   display: none;
